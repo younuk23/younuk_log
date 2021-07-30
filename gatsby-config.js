@@ -2,10 +2,10 @@ module.exports = {
   siteMetadata: {
     title: `solve a problem`,
     author: {
-      name: `Yeonuk`,
-      summary: `개발의 가치는 간결한 코드를 통해 복잡한 현실의 문제를 해결하는 데에 있다고 믿습니다. 기술적인 역량과 유연한 사고방식을 갖추기 위해 노력합니다.`,
+      name: `Yeonuk Hwang`,
+      summary: `개발의 가치는 간결한 코드를 통해 복잡한 현실의 문제를 해결하는 데에 있다고 믿습니다. 기술적인 역량과 더불어 유연한 사고방식을 갖추기 위해 노력합니다.`,
     },
-    description: `개발의 가치는 간결한 코드를 통해 복잡한 현실의 문제를 해결하는 데에 있다고 믿습니다. 기술적인 역량과 유연한 사고방식을 갖추기 위해 노력합니다.`,
+    description: `개발의 가치는 간결한 코드를 통해 복잡한 현실의 문제를 해결하는 데에 있다고 믿습니다. 기술적인 역량과 더불어 유연한 사고방식을 갖추기 위해 노력합니다.`,
     siteUrl: `https://yeonuk.netlify.app`,
   },
   plugins: [
