@@ -3,7 +3,7 @@ title: Javascript 톺아보기 1. 데이터 타입
 date: "2021-07-30T06:17:23.424Z"
 description: "프로그래밍 언어에서 데이터 타입은 무엇이고, 왜 중요한지, 그리고 자바스크립트의 데이터 타입은 어떻게 동작하는지 알아보자"
 thumbnail: "./thumbnail.png"
-thumbnailDescription: "data type"
+tags: ["자바스크립트", "데이터타입"]
 ---
 
 자바스크립트로 개발을 계속 해오고 있고, 자바스크립트를 어느정도 안다고 생각하고 있었다.

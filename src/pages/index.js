@@ -53,9 +53,14 @@ export const pageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           description
+          tags
           thumbnail {
             childImageSharp {
-              gatsbyImageData(width: 960, placeholder: BLURRED)
+              gatsbyImageData(
+                placeholder: BLURRED
+                layout: FULL_WIDTH
+                width: 960
+              )
             }
           }
         }
