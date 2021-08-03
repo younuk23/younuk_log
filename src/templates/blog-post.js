@@ -17,7 +17,11 @@ const BlogPostTemplate = ({ data, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <article itemScope itemType="http://schema.org/Article">
+      <article
+        css={style.postWrpper}
+        itemScope
+        itemType="http://schema.org/Article"
+      >
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date}</p>
@@ -102,3 +106,10 @@ export const pageQuery = graphql`
     }
   }
 `
+
+const style = {
+  postWrpper: css`
+    max-width: 42rem;
+    margin: 0 auto;
+  `,
+}
