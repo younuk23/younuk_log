@@ -1,5 +1,5 @@
 ---
-title: Javascript 톺아보기 2.실행 컨텍스트
+title: Javascript 톺아보기 5.클로저
 date: "2021-09-02T22:17:15.408Z"
 description: "클로저는 무슨 뜻이고 어떤 원리로 동작하는지 알아보자"
 ---
