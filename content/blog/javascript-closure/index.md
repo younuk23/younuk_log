@@ -91,11 +91,51 @@ Javascript에서 함수는 사실 객체이다. 함수를 생성하는 것은 �
 
 - 상태 기억
 
-  - 메모이제이션
+```javascript
+const pureGetFactorial = (n, currentValue = 1) => {
+  if (n === 1) {
+    return currentValue
+  }
+
+  return pureGetFactorial(n - 1, currentValue * n)
+}
+
+pureGetFactorial(110)
+pureGetFactorial(110)
+
+const memoGetFactorial = (() => {
+  const memo = {}
+
+  return n => {
+    if (memo[n]) return memo[n]
+
+    memo[n] = pureGetFactorial(n)
+    return memo[n]
+  }
+})()
+
+memoGetFactorial(110)
+memoGetFactorial(110)
+```
 
 - 상태 은닉
 
-  - private 변수
+```jsx
+const makeCounter = () => {
+  let count = 1
+
+  return {
+    up: () => ++count,
+    down: () => --count,
+  }
+}
+
+const counter = makeCounter()
+
+counter.up() // 2
+counter.up() // 3
+counter.down() // 2
+```
 
 - 상태 공유
 
